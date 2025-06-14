@@ -1,0 +1,73 @@
+body {
+  font-family: sans-serif;
+  background: #f0f0f0;
+  margin: 0;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  height: 100vh;
+  overflow-x: hidden;
+  color: #EFE4D2;
+}
+
+#chat-container {
+  width: 100vw;
+  /* height: 600px; */
+  background: white;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+}
+#login-box{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#chat-box {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  border-bottom: 1px solid #ddd;
+  background-color: #131D4F;
+  height: 80vh;
+  
+}
+
+.input-area {
+  display: flex;
+  gap: 5px;
+  padding: 10px;
+  background: #eee;
+}
+#messageInput{
+  width: 100%;
+  resize:vertical;
+}
+/* 
+.input-area input[type="text"] {
+  flex: 1;
+  padding: 8px;
+} */
+
+input[type="file"] {
+  width: 80px;
+}
+
+
+#imageInput {
+    display: none;
+  }
+
+  #customFileLabel {
+    display: inline-block;
+    /* padding: 10px 20px; */
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+  }
+
+  #customFileLabel:hover {
+    background-color: #00ff0d;
+  }

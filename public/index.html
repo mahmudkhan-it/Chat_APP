@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat App Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <div id="login-box">
+      <h2>Login / Register</h2>
+      <input id="username" type="text" placeholder="Username"><br>
+      <input id="password" type="password" placeholder="Password"><br>
+      <button onclick="login()">Login</button>
+      <!-- <button onclick="register()">Register</button> -->
+      <p id="login-error" style="color:red"></p>
+    </div>
+
+    <div id="chat-container" style="display:none;">
+      <div id="chat-box"></div>
+      <div class="input-area">
+        <!-- <input type="file" id="imageInput" accept="image/*" /> -->
+         <label for="imageInput" id="customFileLabel">
+            🖼️
+          </label>
+          <input type="file" id="imageInput" accept="image/*" />
+          <textarea name="" rows="3" id="messageInput" placeholder="Type a message..."></textarea>
+        <!-- <input type="text" id="messageInput" placeholder="Type a message..." /> -->
+        <button onclick="sendMessage()">Send</button>
+      </div>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
